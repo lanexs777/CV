@@ -1,0 +1,188 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+%\usepackage[scale=0.80]{geometry}
+\usepackage[bottom=0.1in,top=0.4in, scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{Chun Lun}{Lin}
+%\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{1205 cervantes CT, Irvine, California 92617}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\vspace{-20pt}
+\phone[mobile]{+1 (702)885-0734}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{cllin2@uci.edu}                               % optional, remove / comment the line if not wanted
+\homepage{linkedin.com/in/chun-lun-lin-373a2215b/}                         % optional, remove / comment the line if not wanted
+
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+%\small{Master of Science in Computer Science at UC Irvine. Actively seeking 2019 summer internship. Passionate about emerging technologies such as Machine Learning, Artificial Intelligence. Having research experience at CSL lab, UIUC.}
+\vspace{-40pt}
+\section{Educations}
+
+\vspace{4pt}
+
+\begin{itemize}
+
+\item{\cventry{2018--present}{Master of Science in Computer Science}{University of California, Irvine}{Irvine}{}{\vspace{1pt}}}
+
+\vspace{-5pt}
+
+\item{\cventry{2017--2018}{Exchange in Computer Science}{University of Illinois Champaign-Urbana}{Champaign}{}{\vspace{1pt}}}
+
+\vspace{-5pt}
+
+\item{\cventry{2014--2018}{Bachelor in Electrical Engineering and Computer Science}{National Chiao Tung University}{Hsinchu}{}{\vspace{1pt}}}
+
+\vspace{-20pt}
+
+\end{itemize}
+
+\section{Ecperience}
+
+\vspace{-5pt}
+
+\subsection{Research Assistance}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\cventry{2017--2018}{Coordinate Science Laboratory (CSL)}{University of Illinois Champaign-Urbana}{Champaign}{}{Construct an end to end model converters. Such as convert models of caffe to caffe2 and tensorflow to caffe2. Analyze the performance of different models on different frameworks. }}
+\vspace{5pt}
+
+\item{\cventry{2016--2017}{Distribute System and Network Security Lab(DSNS)}{National Chioa Tung University}{Hsinchu}{}{Combine multiple methods to detect firmwares of IOT device. Expand the current Fuzzer system to automatically support different dynamic linking library framework. Adding decompile to the system. Construct an user interface. }}
+
+
+\end{itemize}
+
+\vspace{2pt}
+
+\subsection{Teaching Assistance}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\textbf{National Chiao Tung University:} \textit{'Introduction to Computer Science and Programming'}
+
+\vspace{3pt}
+
+\small{My main works are to design five homework for the students in the class,and design the final project of the course. The language mainly in the course is python. while students in the class have medical background, the final project is mostly related to image processing so that the course can eventually help these students with their profession field. }}
+
+\vspace{6pt}
+
+\end{itemize}
+
+\section{Selected  Projects}
+
+\vspace{4pt}
+
+\begin{itemize}
+
+\item{\textbf{IOT device firmware automatically security detection} 
+
+\vspace{3pt}
+
+\small{ \item[--] Multiple security techniques combinations, such as Firmadyne, Fuzzer, Metasploit, angr.}
+\small{ \item[--] Extend the Fuzzer system under different filesystem and dynamic library linking.}
+\small{ \item[--] It will first extract the file system and do the simulation of the firmware system. Later it will do the Fuzzer via the AFL and then the dynamic test, Metasploit. Eventually it will output a security index value to show how safe or how valunerable is the firmware.  }
+
+
+}
+
+\item{\textbf{Model analyze and conversion} 
+
+\vspace{3pt}
+
+\small{ \item[--] Construct the model converters base on the open source. Fixed the weight and certain model functions in order to make models convert successfully. }
+\small{ \item[--] Analyze the performance of different models on different frameworks. I tested over 10,000 web searchable image and come up with a great function to determine whether right or wrong.  }
+}
+
+
+\vspace{6pt}
+
+\end{itemize}
+
+
+
+
+\section{Technical and Personal skills}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item \textbf{Programming Languages:} Proficient in: C, C++, Python, TeX \\ Also basic ability with: Assembly, VHDL.
+\vspace{6pt}
+\item \textbf{Platform and tools: } Linux, QT, MySQL, Git
+\vspace{6pt}
+
+\vspace{6pt}
+
+\end{itemize}
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.
